@@ -1,3 +1,10 @@
+* {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+
 .pres-back{
 	
 	background-image: url(images/back-planes.jpg);
@@ -41,22 +48,67 @@
 	border: none;
 }
 
+/* ----- ASISTENTE BARRA OPCIONES ----- */
+
 .opciones{
-position: fixed;
-left: 0;
-top: 200px;
-z-index: 2000;
-
+	position: fixed;
+	left: 0;
+	top: 300px;
+	z-index: 2000;
 }
- .social ul{
- 	list-style: none;
- }
 
- .social ul li a{
+.opciones ul{
+ 	list-style: none;
+}
+
+.opciones ul li a{
 
  	display: inline-block;
  	color: #fff;
  	background: #000;
- 	padding: 10px 15px;
+ 	padding: 10px 10px;
  	text-decoration: none;
- }
+ 	-webkit-transition: all 500ms ease;
+ 	-o-transition: all 500ms ease;
+ 	transition: all 500ms ease;
+}
+
+.opciones ul li .icon-cool{
+  background: #003666;
+}
+ 
+.opciones ul li .icon-diamonds{
+  background: #49176d;
+}
+
+.icon-diamonds {
+  font-size: 6em; 
+}
+
+.icon-bin2 {
+  font-size: 0.8em;
+  color: red; 
+}
+.icon-cool {
+  font-size: 6em; 
+}
+
+.opciones ul li a:hover{
+ padding: 10px 30px;
+ background: #000;
+}
+
+.contenedor{
+
+	margin: 200px 200px;
+	position: fixed;
+	top: 120px;
+	z-index: 2000;
+}
+
+.lista{
+
+	margin-left: 200px ;
+	
+	
+	}
