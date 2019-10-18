@@ -1,4 +1,21 @@
-<!DOCTYPE html>
+<?php
+
+ require_once("config/conexion.php");
+
+     
+
+     if(isset($_POST["enviar"]) and $_POST["enviar"]=="si"){
+
+       require_once("modelos/Afiliados.php");
+
+       $usuario = new Afiliados();
+
+       $usuario->login();
+
+   }
+
+?>
+
 <html lang="en">
   <head>
     <title>AVPLUS</title>
@@ -8,14 +25,15 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+<script src="js/jquery.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <script src="datepicker/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="datepicker/css/bootstrap-datepicker.css">
 
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
@@ -51,9 +69,9 @@
 
           <div class="col-md-6">
             <ul class="social-media">
-              <li><a href="#" class="p-2"><span class="icon-facebook"></span></a></li>
-              <li><a href="#" class="p-2"><span class="icon-twitter"></span></a></li>
-              <li><a href="#" class="p-2"><span class="icon-instagram"></span></a></li>
+              <li><a href="#" class="p-2"><i style="color:white" class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></span></a></li>
+              <li><a href="#" class="p-2"><i style="color:white" class="fa fa-twitter-square fa-2x"></i></a></li>
+              <li><a href="#" class="p-2"><i style="color:white" class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
              
           </div>
         </div>
@@ -71,7 +89,64 @@
               <div class="col-md-8 text-center">
                 <h1><strong>Optica AV Plus </strong><br><span class="typed-words"></span></h1>
                 
-                <div><a href="#" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in" aria-hidden="true"></i> INGRESAR</a></div>
+                <div><a href="#" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in" aria-hidden="true"></i> INGRESAR</a>
+                
+                </div>
+ <div class="container-fluid">
+
+      
+      <div class="row">
+         <div class="col-lg-12">
+        
+        <div class="box-body">
+            
+            <?php
+
+
+            if(isset($_GET["m"])) {
+               
+           switch($_GET["m"]){
+
+
+               case "1";
+               ?>
+
+               <div class="alert alert-danger alert-dismissible">
+                      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                      <h4><i class="icon fa fa-ban"></i> El Usuario y/o Contraseña es incorrecto o no tienes permiso!</h4>
+                     
+                </div>
+
+                <?php
+                break;
+
+
+                case "2";
+                ?>
+                    <div class="alert alert-danger alert-dismissible">
+                      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                      <h4><i class="icon fa fa-ban"></i> Los campos estan vacios</h4>
+                     
+                </div>
+                <?php
+                break;
+
+
+
+             }
+
+         }
+
+
+            ?>
+
+             
+        </div>
+    
+
+        </div>
+      </div>
+  </div>
               </div>
             </div>
 
@@ -157,16 +232,18 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 col-lg-4">
-            <a data-toggle="modal" data-target="#modal_afiliacion" class="media-1">
+            <a data-toggle="modal" data-target="#modal_afiliacion" class="media-1" onclick="plan_basico();">
               <img src="images/planclasico.png" alt="Image" class="img-fluid">
               <div class="media-1-content">
                 <h2>AFILIARME</h2>
                 
               </div>
             </a>
+            <button type="button" class="btn btn-primary btn-block">Asistente de Afiliación</button>
           </div>
+          <br>
           <div class="col-md-6 col-lg-4">
-            <a href="#" class="media-1">
+            <a href="#" class="media-1" >
               <img src="images/preferencial.png" alt="Image" class="img-fluid">
               <div class="media-1-content">
                 <h2>AFILIARME</h2>
@@ -193,8 +270,7 @@
   </div>
 <?php require_once("modal/login.php"); ?>
 <?php require_once("modal/modal_compras.php"); ?>
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+
   <script src="js/jquery-ui.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -219,6 +295,8 @@
             </script>
 
   <script src="js/main.js"></script>
+  <script type="text/javascript" src="formAfiliacion.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
   </body>
 </html>

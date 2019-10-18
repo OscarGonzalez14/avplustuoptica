@@ -11,23 +11,55 @@
         color: white;
         
     }
+ #head{
+
+    text-align:center;
+
+ }   
+
+#head h4{
+
+    margin:auto;
+    line-height:51px;
+    vertical-align:middle;
+
+} 
+
+#cuerpo{
+  
+background-image: url("images/back_modal2.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+height: 400px;
+} 
+
+.login-box{
+
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 </style>
 <div class="modal" id="myModal">
   <div class="modal-dialog">
     <div class="modal-content">
+        <div class="modal-header" id="head">
+          <h4 class="modal-title" align="center" id="titulo">PLAN BÁSICO</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
 
-      <!-- Modal Header -->
-      <div class="modal-header" id="head">
-        <h4 class="modal-title"><p align="center">Login</p></h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
 
       <!-- Modal body -->
-      <div class="modal-body">
+<div class="modal-body" id="cuerpo">
         
   <div class="portada">
 
-    <div class="registro">
+    <div class="login-box">
+
+
       
       <form method="post" class="login" autocomplete="off">    
               <div class="form-group">              
