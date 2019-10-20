@@ -14,7 +14,7 @@
 
     <script src="datepicker/js/bootstrap-datepicker.min.js"></script>
     <link rel="stylesheet" href="datepicker/css/bootstrap-datepicker.css">
-         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <script src="js/jquery.min.js"></script>
 <style>
        
@@ -50,23 +50,25 @@
 
     <div class="opciones">
         <ul>
-            <li ><a href="#" class="icon-cool"></a></li><br>
+            <li ><a href="#" class="icon-cool"></a></li>
             <li onclick="mostrar()"><a href="#" class="icon-diamonds"></a></li>
         </ul>        
     </div>
-
-
-
-        <div class="lista">
-            <ul id="lista">
+            <!--<div class="lista">
+            <ul id="lista">-->
+    <div class="marca_seleccionada">
+        <img src="" alt="" id="m_select" width="200" height="100">
+    </div>        
                 
             </ul>
         </div>
+
     <div class="contenedor" id="content">      
         <div class="marcas">
-            <img src="images/marcas/harley.png" alt="flower" width="200" height=100" name="Lacoste" onclick="myFunction(0)">&nbsp;&nbsp;
-            <img src="images/boss.png" alt="flower" width="100" height="80" name="Hugo Boss" onclick="myFunction1()">&nbsp;&nbsp;
-            <img src="images/rayban.png" alt="flower" width="100" height="80" name="RayBan" onclick="myFunction(2)">&nbsp;&nbsp;   
+            <img src="images/marcas/harley.png" alt="flower" width="200" height="100" name="" onclick="select_image(1)">&nbsp;&nbsp;
+            <img src="images/boss.png" alt="flower" width="200" height="100" name="Hugo Boss" id="marca" onclick="select_image(2)">&nbsp;&nbsp;
+            <img src="images/marcas/rayban.png" alt="flower" width="200" height="100" name="RayBan" onclick="select_image(3)">&nbsp;&nbsp;
+            <img src="images/marcas/rayban.png" alt="flower" width="200" height="100" name="RayBan" onclick="select_image(4)">&nbsp;&nbsp;    
         </div>
     </div>
 
@@ -74,7 +76,9 @@
        
    </div>     
 <!--<p id="nuevo_li"></p>-->
-<input type="hidden" id="nuevo_li">
+<div class="orden">
+<input type="text" id="nuevo_li">
+</div>
 </body>
 </html>
 

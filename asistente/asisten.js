@@ -1,4 +1,18 @@
+
+
 $(document).ready(ocultar);
+$(document).ready(ocultarm);
+
+
+function ocultar(){
+
+        document.getElementById("area").style.display = "none";
+    }
+
+function ocultarm(){
+
+        document.getElementById("aream").style.display = "none";
+    }    
 
 
 function myFunction1() 
@@ -54,16 +68,27 @@ function add_li()
     }
 
 
-    function ocultar(){
+    /*function ocultar(){
 
         document.getElementById("content").style.display = "none";
-    }
+    }*/
 
     function mostrar(){
 
-        document.getElementById("content").style.display = "block";
+        //document.getElementById("slider-bar-mujer").style.display = "block";
+        document.getElementById("area").style.display = "block";
+        document.getElementById("area2").style.display = "block";
+         document.getElementById("area2").style.display = "block";
     }
 
+
+    function mostrarm(){
+
+        //document.getElementById("slider-bar-mujer").style.display = "block";
+        document.getElementById("aream").style.display = "block";
+        document.getElementById("area2m").style.display = "block";
+         //document.getElementById("area2").style.display = "block";
+    }
     function mostrar_ocultar(){
 
         var caja =  document.getElementById("content");
@@ -74,18 +99,26 @@ function add_li()
         }
     }
 
-function select_image(numero){
+function plan2(numero){
 
     var txt = document.images[numero].src;
     //alert(txt);
     //var x = document.getElementById("marca").src;
     //var x = document.images[numero].name;
-    document.getElementById("m_select").src = txt;
-    document.getElementById("nuevo_li").value = txt;
+    document.getElementById("forma_seleccionada").src = txt;
+    //document.getElementById("nuevo_li").value = txt;
 
     //var txt = document.images[numero].src;
     //alert(txt);
     //document.getElementById("m_select").src = txt;
-    ocultar();
+    //ocultar();
 
-}  
+}
+    function plan(numero){
+
+    var txt = document.images[numero].name;
+    document.getElementById("forma_select").innerHTML = txt;
+    //document.getElementById("nuevo_li").value = txt;
+
+
+}      
