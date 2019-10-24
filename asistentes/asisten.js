@@ -1,7 +1,7 @@
 
 
-$(document).ready(ocultar);
-$(document).ready(ocultarm);
+//$(document).ready(ocultar);
+//$(document).ready(ocultarm);
 
 
 function ocultar(){

@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
+ 
     <script src="datepicker/js/bootstrap-datepicker.min.js"></script>
     <link rel="stylesheet" href="datepicker/css/bootstrap-datepicker.css">
 
@@ -292,11 +292,12 @@
             loop: true,
             showCursor: true
             });
+ 
             </script>
-
-  <script src="js/main.js"></script>
-  <script type="text/javascript" src="formAfiliacion.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
+  
+  <script type="text/javascript" src="formAfiliacion.js"></script>
+ 
+  <script src="js/main.js"></script>  
   </body>
 </html>
