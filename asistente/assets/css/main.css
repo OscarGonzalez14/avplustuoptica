@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: black;
+		background: white;
 		color: #5b5b5b;
 		font-size: 15pt;
 		line-height: 1.85em;
@@ -3276,4 +3276,46 @@ h4, .h4 {
       height: 300px;
     }
 
-    
+.marcas{
+
+	background:url(../../images/backblack.png); /* Nuestra textura */
+	background-repeat:repeat; /* Indicamos que la textura se repetira */
+	background-attachment: fixed; /* Establecemos una posicion fija para la textura */
+	/* Eliminamos la propiedad de background-size */
+}
+
+.formas-s{
+
+	background:url(../../images/backbody.jpg); /* Nuestra textura */
+	background-repeat:repeat; /* Indicamos que la textura se repetira */
+	background-attachment: fixed; /* Establecemos una posicion fija para la textura */
+	/* Eliminamos la propiedad de background-size */
+}   
+
+.genero{
+
+	    display: flex;
+        align-items: center;
+}
+.gen{
+
+	margin: 0 auto;
+} 
+
+.genero .gen a{
+	padding:10px;
+	color:white;
+	font-family:'Helvetica';
+	font-size:30;
+	border: 3px solid #d0d0d0;
+}
+
+.planes-selec{
+
+	display: flex;
+	align-items: center;
+}
+
+.plan-item-selec{
+	margin: 0 auto;
+}
