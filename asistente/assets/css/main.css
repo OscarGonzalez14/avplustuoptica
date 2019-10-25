@@ -3262,3 +3262,18 @@ h4, .h4 {
 	justify-content: center;
 	user-select:none;
 }
+
+   .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background-color:white;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+
+    
