@@ -47,7 +47,7 @@ height: 400px;
   <div class="modal-dialog">
     <div class="modal-content">
         <div class="modal-header" id="head">
-          <h4 class="modal-title" align="center" id="titulo">PLAN BÁSICO</h4>
+          <h4 class="modal-title" align="center" id="titulo">REGISTRARME</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
 

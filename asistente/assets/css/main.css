@@ -3148,7 +3148,7 @@ input, select, textarea {
   max-height: 400vh;
   background-size: cover;
   background-position: center center;
-    display: flex;
+  display: flex;
   align-items: start;
 }
 
@@ -3200,7 +3200,17 @@ h4, .h4 {
   margin: auto auto;
 
 }
+.service-item {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 25px 30px;
+  text-align: center;
+  color: #fff;
+  height: 130px; 
+  width: 240px;
+  
+  margin: auto auto;
 
+}
 .planes .service-item .line-dec {
   width: 45px;
   height: 3px;
@@ -3212,7 +3222,7 @@ h4, .h4 {
 
 	  align-items: center;
       margin: 0 auto;
-      margin-top: 50px;
+      
 }
 
 .formas{
@@ -3263,22 +3273,10 @@ h4, .h4 {
 	user-select:none;
 }
 
-   .swiper-container {
-      width: 100%;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      background-color:white;
-    }
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 300px;
-      height: 300px;
-    }
 
 .marcas{
 
-	background:url(../../images/backblack.png); /* Nuestra textura */
+	background:url(../../images/backbody.jpg); /* Nuestra textura */
 	background-repeat:repeat; /* Indicamos que la textura se repetira */
 	background-attachment: fixed; /* Establecemos una posicion fija para la textura */
 	/* Eliminamos la propiedad de background-size */
@@ -3319,3 +3317,4 @@ h4, .h4 {
 .plan-item-selec{
 	margin: 0 auto;
 }
+

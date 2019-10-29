@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 
 	const elementosCarousel = document.querySelectorAll('#slidefm');
 	M.Carousel.init(elementosCarousel,{
-		duration: 170,
+		duration: 180,
 		dist: -80,
 		shift: 5,
 		padding: 5,
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 
 	const elementosCarousel = document.querySelectorAll('#slidema');
 	M.Carousel.init(elementosCarousel,{
-		duration: 170,
+		duration: 180,
 		dist: -80,
 		shift: 5,
 		padding: 5,
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 
 	const elementosCarousel = document.querySelectorAll('#slidemarcas');
 	M.Carousel.init(elementosCarousel,{
-		duration: 170,
+		duration: 180,
 		dist: -80,
 		shift: 5,
 		padding: 5,
@@ -71,6 +71,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 		onCycleTo: 4
 	})
 });
+
 
   /*	$(document).ready(function(){
 $('.carousel').carousel({fullWidth:true}).css("height", $(window).height());
@@ -84,3 +85,12 @@ $('.carousel').carousel({fullWidth:true}).css("height", $(window).height());
   			$('.carousel').carousel('prev');
   		});
   	});*/
+
+ document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('#slidelentes');
+      var instances = M.Carousel.init(elems, {
+        duration: 500,
+        indicators: true
+      });
+    });
+ 	
