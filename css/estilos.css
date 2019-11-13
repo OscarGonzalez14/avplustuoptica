@@ -122,3 +122,9 @@
 
 	margin-top: 300px
 }
+
+.btn-afiliacion{
+
+	        display: flex;
+        align-items: center;
+}

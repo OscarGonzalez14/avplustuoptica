@@ -182,46 +182,8 @@
       </div>
     </section>
 
-<!--======PLANES PRESENTACION===============-->
- 
-  <!--       
-    <div class="site-blocks-cover overlay" style="background-image: url(images/lentes.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
-      <div class="container">
-        <div class="row align-items-center justify-content-center text-center">
 
-            
-          <div class="col-md-12" data-aos="fade-up" data-aos-delay="400">
-                        
-            <div class="row justify-content-center mb-8">
-              <div class="col-md-12 text-center">
-             <h1 style="color:white;">NUESTROS PLANES</h1>    
-              <div class="row">
-            
-              <div class="col-sm-4">
-                <img src="images/planclasico.png" >
-                <button type="button" class="btn btn-primary btn-block" style="border:none" onClick="plan_premium()">Afiliarme</button>
-
-              </div>
-              <br>
-              <div class="col-sm-4">
-                <img src="images/planpremium.png" alt="">
-                <button type="button" class="btn btn-primary btn-block" onClick="plan_premium()">Afiliarme</button>
-              </div>
-            <br>
-              <div class="col-sm-4">
-                <img src="images/preferencial.png" alt="">
-                <button type="button" class="btn btn-primary btn-block" onClick="plan_premium()">Afiliarme</button>
-              </div>
-        
-            </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div> -->
-<section class="site-section" style="background-image: url(images/lentes.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+<section class="site-section" style="background-image: url(images/lentes.jpg);  background-size: cover" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container" >
         <div class="row mb-5 justify-content-center">
           <div class="col-md-8 text-center">
@@ -239,7 +201,7 @@
                 
               </div>
             </a>
-            <button type="button" class="btn btn-primary btn-block">Asistente de Afiliación</button>
+            
           </div>
           <br>
           <div class="col-md-6 col-lg-4">
@@ -264,10 +226,11 @@
                     
         </div>
       </div>
+      <div class="btn-afiliacion col text-center">
+        <a href="asistente/index.php"><button type="button" class="btn btn-primary">Asistente de Afiliación</button></a>
+      </div>
     </section>
 
-
-  </div>
 <?php require_once("modal/login.php"); ?>
 <?php require_once("modal/modal_compras.php"); ?>
 

@@ -94,7 +94,7 @@ function validaCampos(){
     //var direccion = $("#direccion").val();
     //validamos campos
     if($.trim(tarjeta) == ""){
-    toastr.error("No ha ingresado en numero de Tarjeta","Aviso!");
+    toastr.error("No ha ingresado el numero de Tarjeta","Aviso!");
         return false;
     }
 
@@ -140,7 +140,7 @@ function plan_premium(){
 
   $('#myModal').modal('show');
   $('.modal-title').text("Afiliarme a Plan Premium");
-  $('#tipo_plan').val("Plan Premium");
+  $('#tipo_plan').val("Plan Premium");    
   header.style.backgroundColor = "#2b2b2b";
   document.getElementById("titulo").style.color = "white";
 
